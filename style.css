@@ -510,3 +510,28 @@ body {
   .avatar-caption { top: 10%; }
   .energy-joke { font-size: 12px; }
 }
+
+.icon-definitions { height: 0; overflow: hidden; position: absolute; width: 0; }
+.icon { fill: none; flex: 0 0 auto; height: 1em; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 1em; }
+.icon-heart { fill: currentColor; stroke-width: 1.2; }
+.icon-arrow, .icon-down, .icon-up { height: 16px; width: 16px; }
+.icon-up { transform: rotate(180deg); }
+.nav-cta .icon-arrow, .button-primary .icon-arrow { color: #ffad86; margin-left: 5px; }
+.text-link .icon-down { color: var(--orange); margin-left: 5px; vertical-align: middle; }
+.avatar-stack .icon { height: 15px; width: 15px; }
+.avatar-stack span:first-child { color: #9c573a; }
+.avatar-stack span:nth-child(2) { color: #806b8e; }
+.avatar-stack span:nth-child(3) { color: #8f792f; }
+.heat-label-icon { color: var(--orange); height: 24px; width: 24px; }
+.temperature-pill .icon { height: 14px; margin-right: 5px; vertical-align: middle; width: 14px; }
+.sparkle-one { height: 24px; width: 24px; }
+.sparkle-two { height: 20px; width: 20px; }
+.sparkle-three { height: 16px; width: 16px; }
+.scroll-cue .icon-down { color: var(--orange); height: 16px; margin-right: 8px; vertical-align: middle; width: 16px; }
+.step-illustration { height: 23px; width: 23px; }
+.science-note .icon-info { color: var(--orange); height: 13px; margin-right: 5px; vertical-align: middle; width: 13px; }
+.benefit-icon .icon { height: 23px; width: 23px; }
+.booking-note > .icon-heart { color: var(--orange); height: 21px; width: 21px; }
+.energy-joke > .icon-arrow { color: var(--orange); height: 15px; margin-right: 5px; vertical-align: middle; width: 15px; }
+.back-to-top .icon-up { height: 13px; margin-left: 3px; vertical-align: middle; width: 13px; }
+.form-submit .icon-arrow { color: #fff4e9; height: 17px; width: 17px; }
