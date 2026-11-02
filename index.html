@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Découvrez le chauffage humain : une source de chaleur naturelle, mobile et toujours partante pour partager un moment."
+    >
+    <meta name="theme-color" content="#100e0e">
+    <title>Share temperature — le chauffage humain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#accueil" aria-label="Share temperature, accueil">
+        <span class="wordmark-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path class="logo-heart" d="M16 28S3.5 20.7 3.5 12.3C3.5 5.7 11.6 2.8 16 9.2c4.4-6.4 12.5-3.5 12.5 3.1C28.5 20.7 16 28 16 28Z"/><path class="logo-flame" d="M16 24.3c-4.1-2.2-5.3-5.2-3.5-8.1.8-1.3 2-2.2 2.1-4.6 2.1 1.5 2.6 3.1 2.2 4.6 1.7-1.1 2.6-2.5 2.5-4.1 3.9 3.9 3.8 7.6.7 10.5-.9.8-2.2 1.4-4 1.7Z"/><path class="logo-flame-core" d="M16.1 21.7c-1.7-1.1-2.2-2.5-1.4-3.8.4-.7 1-1.1 1.1-2.1 1.5 1.2 2.6 2.4 2.2 3.7-.2 1-1 1.7-1.9 2.2Z"/></svg></span>
+        <span>share <span class="wordmark-light">temperature</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#concept">Le concept</a>
+        <a href="#benefices">Les avantages</a>
+        <a class="nav-cta" href="#reserver">Demander un devis <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Disponible pour un moment au chaud</p>
+          <h1>Le chauffage<br>le plus <span class="highlight">humain.</span></h1>
+          <p class="hero-description">
+            Une chaleur naturelle, une présence agréable et zéro bouton à chercher.
+            Rencontrez le chauffage d’appoint qui préfère les bons moments aux prises murales.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#reserver">Réserver une démo <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#concept">Comment ça marche ? <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>☀</span><span>♡</span><span>✳</span>
+            </div>
+            <p><strong>100 % naturel</strong><br><span>Alimenté par un goûter et une bonne dose de bonne humeur.</span></p>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Avatar thermique infrarouge montrant la chaleur corporelle en mouvement">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun" aria-hidden="true"></div>
+          <div class="heat-label"><span class="heat-label-icon">≈</span><span>chaleur<br><strong>partagée</strong></span></div>
+          <div class="avatar-caption" aria-hidden="true"><span class="avatar-caption-dot"></span> MODÈLE <strong>DH</strong></div>
+          <svg class="person-model thermal-avatar" viewBox="0 0 320 410" aria-hidden="true">
+            <defs>
+              <linearGradient id="thermal-base" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#29246d"/>
+                <stop offset=".34" stop-color="#573f99"/>
+                <stop offset=".68" stop-color="#d34d48"/>
+                <stop offset="1" stop-color="#ff923d"/>
+              </linearGradient>
+              <linearGradient id="thermal-limb" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#277cac"/>
+                <stop offset=".43" stop-color="#7442a1"/>
+                <stop offset=".73" stop-color="#ed554c"/>
+                <stop offset="1" stop-color="#ffd15c"/>
+              </linearGradient>
+              <radialGradient id="thermal-torso" cx=".52" cy=".55" r=".58">
+                <stop offset="0" stop-color="#fff28a"/>
+                <stop offset=".2" stop-color="#ff9e43"/>
+                <stop offset=".48" stop-color="#ec493e"/>
+                <stop offset=".74" stop-color="#9143a0"/>
+                <stop offset="1" stop-color="#302b7e"/>
+              </radialGradient>
+              <radialGradient id="thermal-face" cx=".48" cy=".78" r=".72">
+                <stop offset="0" stop-color="#fff18b"/>
+                <stop offset=".34" stop-color="#ff9b43"/>
+                <stop offset=".72" stop-color="#e84c52"/>
+                <stop offset="1" stop-color="#7540a0"/>
+              </radialGradient>
+              <radialGradient id="thermal-current">
+                <stop offset="0" stop-color="#fff7a4" stop-opacity=".96"/>
+                <stop offset=".35" stop-color="#ffcb4b" stop-opacity=".88"/>
+                <stop offset=".72" stop-color="#ff693e" stop-opacity=".57"/>
+                <stop offset="1" stop-color="#ff693e" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="thermal-spectrum">
+                <stop offset="0" stop-color="#3c57c4"/>
+                <stop offset=".28" stop-color="#a349c0"/>
+                <stop offset=".55" stop-color="#fb5048"/>
+                <stop offset=".78" stop-color="#ffac42"/>
+                <stop offset="1" stop-color="#fff09a"/>
+              </linearGradient>
+              <filter id="thermal-soft-glow" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="11"/>
+              </filter>
+              <clipPath id="thermal-silhouette">
+                <path d="M136 106h48l8 38 38 18c13 6 22 17 26 32l18 77c4 17-5 29-19 33s-26-5-31-20l-15-51-7 58-4 93h-39l-10-78-9 78h-39l1-96-8-56-15 52c-5 16-17 23-31 18s-20-17-15-33l21-72c5-17 14-29 29-36l37-17 8-38z"/>
+                <ellipse cx="160" cy="69" rx="45" ry="54"/>
+              </clipPath>
+            </defs>
+            <ellipse class="thermal-ground" cx="160" cy="393" rx="81" ry="11" fill="#ec7953" opacity=".22"/>
+            <g class="thermal-heat-waves" fill="none" stroke="url(#thermal-spectrum)" stroke-linecap="round">
+              <path class="heat-wave wave-left" d="M88 273c-19-24 13-38-1-63s11-34 2-55" stroke-width="3"/>
+              <path class="heat-wave wave-right" d="M236 255c17-21-9-35 5-57s-8-35 4-53" stroke-width="3"/>
+              <path class="heat-wave wave-top" d="M128 30c-14-19 10-25 1-42m43 43c14-19-10-25-1-42" stroke-width="2.5"/>
+            </g>
+            <g clip-path="url(#thermal-silhouette)">
+              <rect x="65" y="12" width="190" height="385" fill="url(#thermal-base)"/>
+              <ellipse class="heat-source heat-source-body" cx="161" cy="225" rx="72" ry="91" fill="url(#thermal-torso)"/>
+              <ellipse class="heat-source heat-source-face" cx="161" cy="91" rx="50" ry="51" fill="url(#thermal-face)"/>
+              <ellipse class="heat-source heat-source-left" cx="88" cy="220" rx="30" ry="76" fill="url(#thermal-limb)"/>
+              <ellipse class="heat-source heat-source-right" cx="234" cy="218" rx="31" ry="76" fill="url(#thermal-limb)"/>
+              <ellipse class="heat-source heat-source-core" cx="161" cy="204" rx="63" ry="72" fill="url(#thermal-current)" filter="url(#thermal-soft-glow)"/>
+              <ellipse class="heat-source heat-source-head" cx="162" cy="104" rx="38" ry="39" fill="url(#thermal-current)" filter="url(#thermal-soft-glow)"/>
+              <path d="M126 152c19 10 46 12 69 0" fill="none" stroke="#ffd99b" stroke-opacity=".58" stroke-width="2"/>
+              <path d="M119 182c25-18 59-18 83 0M115 208c26-20 65-19 91 0M116 235c26-19 64-19 90 0M123 263c23-16 51-16 75 0" fill="none" stroke="#ffe0a2" stroke-opacity=".27" stroke-width="1.5"/>
+              <path d="M145 88h3m25 0h3m-24 17c7 5 13 5 19 0" fill="none" stroke="#502f72" stroke-linecap="round" stroke-width="3"/>
+            </g>
+            <path d="M136 106h48l8 38 38 18c13 6 22 17 26 32l18 77c4 17-5 29-19 33s-26-5-31-20l-15-51-7 58-4 93h-39l-10-78-9 78h-39l1-96-8-56-15 52c-5 16-17 23-31 18s-20-17-15-33l21-72c5-17 14-29 29-36l37-17 8-38z" fill="none" stroke="#ffb267" stroke-opacity=".85" stroke-width="2"/>
+            <ellipse cx="160" cy="69" rx="45" ry="54" fill="none" stroke="#ffbe73" stroke-opacity=".9" stroke-width="2"/>
+            <circle class="thermal-scan" cx="159" cy="185" r="95" fill="none" stroke="#fff1ab" stroke-opacity=".28" stroke-width="1"/>
+            <circle cx="161" cy="204" r="4" fill="#fff5a8"/>
+          </svg>
+          <div class="temperature-pill"><span aria-hidden="true">🌡</span> Température idéale : <strong>près de vous</strong></div>
+          <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+          <span class="sparkle sparkle-three" aria-hidden="true">✳</span>
+          <div class="thermal-legend" aria-hidden="true"><span>FRAIS</span><span class="thermal-legend-bar"></span><span>CHAUD</span></div>
+        </div>
+        <a class="scroll-cue" href="#concept"><span aria-hidden="true">↓</span> FAIRE DÉFILER</a>
+      </section>
+
+      <section class="concept section-shell" id="concept">
+        <div class="section-heading">
+          <p class="eyebrow">01 — La science du câlin</p>
+          <h2>Comment ça<br><span class="serif-accent">réchauffe ?</span></h2>
+        </div>
+        <div class="concept-content">
+          <p class="concept-lead">
+            Le corps humain est une petite centrale thermique. Il produit de la chaleur
+            en permanence — et la partage avec son environnement, surtout quand on se
+            tient bien près.
+          </p>
+          <div class="process-list">
+            <article class="process-step">
+              <span class="step-number">01</span>
+              <div><h3>Le moteur tourne</h3><p>Le métabolisme transforme l’énergie des aliments en activité… et en chaleur.</p></div>
+              <span class="step-illustration" aria-hidden="true">↗</span>
+            </article>
+            <article class="process-step">
+              <span class="step-number">02</span>
+              <div><h3>La chaleur se diffuse</h3><p>Le corps cède de la chaleur par rayonnement, convection, conduction et évaporation.</p></div>
+              <span class="step-illustration" aria-hidden="true">≈</span>
+            </article>
+            <article class="process-step">
+              <span class="step-number">03</span>
+              <div><h3>La proximité fait le reste</h3><p>Un plaid partagé, une épaule proche : la chaleur de contact devient un vrai moment de confort.</p></div>
+              <span class="step-illustration" aria-hidden="true">♡</span>
+            </article>
+          </div>
+          <p class="science-note"><span aria-hidden="true">ⓘ</span> DH dégage environ 100 W de chaleur au repos : parfait pour réchauffer l’ambiance et la personne juste à côté.</p>
+        </div>
+      </section>
+
+      <section class="benefits" id="benefices">
+        <div class="section-shell benefits-inner">
+          <div class="benefits-heading">
+            <p class="eyebrow">02 — Bien plus qu’un radiateur</p>
+            <h2>La chaleur,<br><span class="serif-accent">avec un petit plus.</span></h2>
+            <p>La température, c’est bien. La compagnie, c’est encore mieux.</p>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <span class="benefit-icon icon-peach" aria-hidden="true">☼</span>
+              <h3>Naturellement chaleureux</h3>
+              <p>Produit sa chaleur tout seul. Pas de prise, pas d’installation, pas de mode d’emploi.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon icon-lilac" aria-hidden="true">⌁</span>
+              <h3>Un peu plus écologique</h3>
+              <p>La chaleur est produite naturellement, sans électricité supplémentaire pour faire fonctionner le modèle DH.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon icon-yellow" aria-hidden="true">♡</span>
+              <h3>Double effet réconfort</h3>
+              <p>Une présence, une conversation et une bonne raison de faire une pause.</p>
+            </article>
+          </div>
+          <p class="benefits-footnote">* Le niveau de chaleur varie selon les disponibilités, l’activité, les couches de vêtements et la météo intérieure.</p>
+        </div>
+      </section>
+
+      <section class="booking section-shell" id="reserver">
+        <div class="booking-copy">
+          <p class="eyebrow">03 — Faites une demande</p>
+          <h2>Un peu de chaleur<br><span class="serif-accent">sur demande.</span></h2>
+          <p>Un moment au chaud, une pause ou une démo du concept ? Dites-moi ce qui vous ferait plaisir, et on s’organise.</p>
+          <p class="energy-joke"><span aria-hidden="true">↗</span> En France, le chauffage coûte tellement cher que DH propose la chaleur humaine : le seul radiateur qui répond « je suis déjà là » quand on demande où est le thermostat.</p>
+          <div class="booking-note"><span aria-hidden="true">♡</span><span><strong>Petit conseil d’utilisation</strong><br>Prévoir un plaid ou une bonne série améliore l’expérience des deux côtés.</span></div>
+        </div>
+        <div class="form-card">
+          <div class="form-card-heading"><span>Demande de réservation</span><span class="form-tag">sans engagement</span></div>
+          <form id="booking-form" action="https://formsubmit.co/dounghwi@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nouvelle demande de chaleur humaine — DH">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+            <div class="form-row">
+              <label for="name">Votre prénom</label>
+              <input id="name" name="name" autocomplete="given-name" placeholder="Comment vous appeler ?" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Votre e-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+            </div>
+            <div class="form-row form-row-split">
+              <div>
+                <label for="date">Quand ?</label>
+                <input id="date" name="date" type="date" required>
+              </div>
+              <div>
+                <label for="moment">Pour combien de temps ?</label>
+                <select id="moment" name="moment" required>
+                  <option value="" disabled selected>Sélectionner une option</option>
+                  <option value="Une pause au chaud">Une pause au chaud</option>
+                  <option value="Une heure">Une heure</option>
+                  <option value="Le temps d’un plaid">Le temps d’un plaid</option>
+                  <option value="À définir ensemble">À définir ensemble</option>
+                  <option value="À la vida a la muerte">À la vida a la muerte</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="message">Un mot en plus <span>(facultatif)</span></label>
+              <textarea id="message" name="message" rows="3" placeholder="Un plaid, une discussion, un moment au chaud…"></textarea>
+            </div>
+            <button class="button button-primary form-submit" type="submit">Envoyer ma demande <span aria-hidden="true">↗</span></button>
+            <p class="form-disclaimer">Votre demande sera envoyée par e-mail via FormSubmit. En envoyant ce formulaire, vous acceptez que vos coordonnées soient utilisées pour vous répondre.</p>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#accueil" aria-label="Share temperature, accueil"><span class="wordmark-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path class="logo-heart" d="M16 28S3.5 20.7 3.5 12.3C3.5 5.7 11.6 2.8 16 9.2c4.4-6.4 12.5-3.5 12.5 3.1C28.5 20.7 16 28 16 28Z"/><path class="logo-flame" d="M16 24.3c-4.1-2.2-5.3-5.2-3.5-8.1.8-1.3 2-2.2 2.1-4.6 2.1 1.5 2.6 3.1 2.2 4.6 1.7-1.1 2.6-2.5 2.5-4.1 3.9 3.9 3.8 7.6.7 10.5-.9.8-2.2 1.4-4 1.7Z"/><path class="logo-flame-core" d="M16.1 21.7c-1.7-1.1-2.2-2.5-1.4-3.8.4-.7 1-1.1 1.1-2.1 1.5 1.2 2.6 2.4 2.2 3.7-.2 1-1 1.7-1.9 2.2Z"/></svg></span><span>share <span class="wordmark-light">temperature</span></span></a>
+      <p>Fait avec un peu de chaleur et beaucoup d’autodérision.</p>
+      <a href="#accueil" class="back-to-top">Retour en haut ↑</a>
+    </footer>
+  </body>
+</html>
