@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=UnifrakturCook:wght@700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="style.css">
@@ -43,8 +43,8 @@
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
         <a href="#collection">La collection</a>
-        <a href="#maison">La maison</a>
-        <a href="#journal">Le journal</a>
+        <a href="#collection">Les vêtements</a>
+        <a href="#collection">Nouveautés</a>
       </nav>
       <button class="cart-button" id="open-cart" type="button" aria-label="Ouvrir le panier, 0 article">
         <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
@@ -58,11 +58,11 @@
         <div class="hero-image" role="img" aria-label="Portrait de mode sombre dans une rue ancienne"></div>
         <div class="hero-vignette"></div>
         <div class="hero-content page-width">
-          <p class="eyebrow"><span class="eyebrow-line"></span> Collection automne / hiver · 01</p>
-          <h1>La nuit<br>vous <em>appartient.</em></h1>
-          <p class="hero-description">Des silhouettes qui n’ont pas peur de l’ombre. Des matières à vivre, des détails qui murmurent, et votre propre façon d’habiter la nuit.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> DH · Vestiaire de la nuit</p>
+          <h1>Habillez<br><em>l’obscurité.</em></h1>
+          <p class="hero-description">Du velours profond aux silhouettes radicales : une collection gothique à porter comme une seconde peau. Trouvez votre pièce, imposez votre présence.</p>
           <a class="button button-light" href="#collection">Explorer la collection <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-          <span class="hero-index">01 <span>/</span> 04</span>
+          <span class="hero-index">DARK <span>/</span> HOUSE</span>
         </div>
         <div class="hero-side-note" aria-hidden="true">NOCTURNAL BY NATURE · EST. MMXXIV</div>
         <a class="hero-scroll" href="#collection"><span></span> DÉFILER</a>
@@ -77,15 +77,22 @@
 
       <section class="collection page-width" id="collection">
         <div class="section-topline">
-          <p class="eyebrow"><span class="eyebrow-line"></span> 01 — La sélection</p>
-          <span class="section-aside">Des essentiels pour les heures sombres.</span>
+          <p class="eyebrow"><span class="eyebrow-line"></span> 01 — Le vestiaire DH</p>
+          <span class="section-aside"><span id="product-count">08</span> pièces · sélection nocturne</span>
         </div>
         <div class="section-heading">
-          <h2>Pièces <em>de caractère.</em></h2>
-          <a class="underlined-link" href="#journal">Voir tout le vestiaire <span aria-hidden="true">↗</span></a>
+          <h2>Les vêtements <em>de la nuit.</em></h2>
+          <p>Coupe franche. Noir profond. Aucune permission.</p>
+        </div>
+        <div class="collection-filters" role="group" aria-label="Filtrer les vêtements">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tout voir <span>08</span></button>
+          <button class="filter-button" type="button" data-filter="manteaux" aria-pressed="false">Manteaux</button>
+          <button class="filter-button" type="button" data-filter="robes" aria-pressed="false">Robes</button>
+          <button class="filter-button" type="button" data-filter="hauts" aria-pressed="false">Hauts</button>
+          <button class="filter-button" type="button" data-filter="bas" aria-pressed="false">Bas</button>
         </div>
         <div class="product-grid">
-          <article class="product-card">
+          <article class="product-card" data-category="manteaux">
             <a class="product-image image-one" href="#collection" aria-label="Voir le manteau Veillée">
               <span class="product-tag">PIÈCE SIGNATURE</span>
               <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
@@ -96,7 +103,7 @@
             </div>
             <button class="add-to-cart" type="button" data-product="manteau" aria-label="Ajouter Manteau Veillée au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="robes">
             <a class="product-image image-two" href="#collection" aria-label="Voir la robe Minuit">
               <span class="product-tag tag-new">NOUVEAU</span>
               <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
@@ -107,7 +114,7 @@
             </div>
             <button class="add-to-cart" type="button" data-product="robe" aria-label="Ajouter Robe Minuit au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="bas">
             <a class="product-image image-three" href="#collection" aria-label="Voir le pantalon Cendre">
               <span class="product-tag">SÉRIE LIMITÉE</span>
               <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
@@ -118,7 +125,7 @@
             </div>
             <button class="add-to-cart" type="button" data-product="pantalon" aria-label="Ajouter Pantalon Cendre au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="hauts">
             <a class="product-image image-four" href="#collection" aria-label="Voir le haut Ombre">
               <span class="product-tag tag-soft">ESSENTIEL</span>
               <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
@@ -129,40 +136,52 @@
             </div>
             <button class="add-to-cart" type="button" data-product="haut" aria-label="Ajouter Haut Ombre au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
           </article>
+          <article class="product-card" data-category="manteaux">
+            <a class="product-image image-five" href="#collection" aria-label="Voir le trench Nuit Blanche">
+              <span class="product-tag tag-new">NOUVEAU</span>
+              <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+            </a>
+            <div class="product-info">
+              <div><p class="product-category">TRENCH · GABARDINE</p><h3>Trench Nuit Blanche</h3></div>
+              <p class="product-price">218 €</p>
+            </div>
+            <button class="add-to-cart" type="button" data-product="trench" aria-label="Ajouter Trench Nuit Blanche au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
+          </article>
+          <article class="product-card" data-category="robes">
+            <a class="product-image image-six" href="#collection" aria-label="Voir la robe Veuve Noire">
+              <span class="product-tag">PIÈCE SIGNATURE</span>
+              <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+            </a>
+            <div class="product-info">
+              <div><p class="product-category">ROBE · VELOURS</p><h3>Robe Veuve Noire</h3></div>
+              <p class="product-price">156 €</p>
+            </div>
+            <button class="add-to-cart" type="button" data-product="robe-velours" aria-label="Ajouter Robe Veuve Noire au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
+          </article>
+          <article class="product-card" data-category="hauts">
+            <a class="product-image image-seven" href="#collection" aria-label="Voir le corset Reliquaire">
+              <span class="product-tag tag-soft">ÉDITION DH</span>
+              <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+            </a>
+            <div class="product-info">
+              <div><p class="product-category">CORSET · SATIN MAT</p><h3>Corset Reliquaire</h3></div>
+              <p class="product-price">112 €</p>
+            </div>
+            <button class="add-to-cart" type="button" data-product="corset" aria-label="Ajouter Corset Reliquaire au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
+          </article>
+          <article class="product-card" data-category="bas">
+            <a class="product-image image-eight" href="#collection" aria-label="Voir la jupe Culte">
+              <span class="product-tag">ESSENTIEL</span>
+              <span class="quick-view">Voir la pièce <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+            </a>
+            <div class="product-info">
+              <div><p class="product-category">JUPE · PLIS PROFONDS</p><h3>Jupe Culte</h3></div>
+              <p class="product-price">86 €</p>
+            </div>
+            <button class="add-to-cart" type="button" data-product="jupe" aria-label="Ajouter Jupe Culte au panier">Ajouter au panier <svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg></button>
+          </article>
         </div>
-        <p class="collection-note"><svg class="icon" aria-hidden="true"><use href="#icon-moon"/></svg> Petites séries, grandes nuits. Chaque pièce est choisie pour être portée et reportée.</p>
-      </section>
-
-      <section class="manifesto" id="maison">
-        <div class="manifesto-image" role="img" aria-label="Silhouette en tenue noire dans une lumière dramatique"></div>
-        <div class="manifesto-content">
-          <p class="eyebrow"><span class="eyebrow-line"></span> 02 — La maison DH</p>
-          <h2>Pas besoin<br>de <em>permission.</em></h2>
-          <p>DH est née pour celles et ceux qui s’habillent comme ils se sentent. Une garde-robe nocturne, libre et un peu indocile — loin des tendances qui font trop de bruit.</p>
-          <a class="underlined-link" href="#journal">Notre histoire <span aria-hidden="true">↗</span></a>
-          <span class="manifesto-signature">D.H.</span>
-        </div>
-      </section>
-
-      <section class="values page-width" id="journal">
-        <p class="eyebrow"><span class="eyebrow-line"></span> 03 — Nos obsessions</p>
-        <div class="values-grid">
-          <article><span class="value-number">01</span><h3>La bonne matière</h3><p>Du coton doux, des textures profondes, des pièces faites pour durer au-delà d’une saison.</p></article>
-          <article><span class="value-number">02</span><h3>Le droit d’être soi</h3><p>Des coupes libres et des idées sans étiquette. Le style n’a pas à demander la permission.</p></article>
-          <article><span class="value-number">03</span><h3>Moins, mais mieux</h3><p>Des séries choisies avec soin, pour préférer la pièce que l’on garde à celle que l’on oublie.</p></article>
-        </div>
-      </section>
-
-      <section class="newsletter">
-        <div class="newsletter-inner page-width">
-          <div><p class="eyebrow"><span class="eyebrow-line"></span> Correspondance nocturne</p><h2>Un mot après <em>minuit.</em></h2><p>Les nouvelles pièces, les petites séries et quelques pensées sombres. Pas de bruit inutile.</p></div>
-          <form id="newsletter-form" class="newsletter-form">
-            <label class="sr-only" for="newsletter-email">Votre adresse e-mail</label>
-            <input id="newsletter-email" name="email" type="email" placeholder="Votre adresse e-mail" required>
-            <button type="submit" aria-label="S’inscrire à la newsletter"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
-            <p class="newsletter-feedback" id="newsletter-feedback" role="status" aria-live="polite"></p>
-          </form>
-        </div>
+        <p class="collection-note"><svg class="icon" aria-hidden="true"><use href="#icon-moon"/></svg> Huit pièces pour composer votre propre uniforme nocturne.</p>
       </section>
     </main>
 

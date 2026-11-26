@@ -23,6 +23,30 @@ const products = {
     price: 64,
     image: "image-four",
   },
+  trench: {
+    name: "Trench Nuit Blanche",
+    category: "Trench · gabardine",
+    price: 218,
+    image: "image-five",
+  },
+  "robe-velours": {
+    name: "Robe Veuve Noire",
+    category: "Robe · velours",
+    price: 156,
+    image: "image-six",
+  },
+  corset: {
+    name: "Corset Reliquaire",
+    category: "Corset · satin mat",
+    price: 112,
+    image: "image-seven",
+  },
+  jupe: {
+    name: "Jupe Culte",
+    category: "Jupe · plis profonds",
+    price: 86,
+    image: "image-eight",
+  },
 };
 
 const cart = new Map();
@@ -138,16 +162,37 @@ document.querySelector("#checkout-button").addEventListener("click", () => {
   cartNotice.textContent = "Cette boutique est une maquette : le paiement et les commandes ne sont pas encore activés.";
 });
 
-const newsletterForm = document.querySelector("#newsletter-form");
-const newsletterFeedback = document.querySelector("#newsletter-feedback");
-newsletterForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  newsletterFeedback.textContent = "La liste de diffusion sera bientôt disponible. Votre adresse n’a pas été enregistrée.";
-  newsletterForm.reset();
+const filterButtons = document.querySelectorAll(".filter-button");
+const productCards = document.querySelectorAll(".product-card");
+const productCount = document.querySelector("#product-count");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.filter;
+    if (!category) {
+      return;
+    }
+
+    filterButtons.forEach((filterButton) => {
+      const isActive = filterButton === button;
+      filterButton.classList.toggle("is-active", isActive);
+      filterButton.setAttribute("aria-pressed", String(isActive));
+    });
+
+    let visibleProducts = 0;
+    productCards.forEach((card) => {
+      const isVisible = category === "all" || card.dataset.category === category;
+      card.hidden = !isVisible;
+      if (isVisible) {
+        visibleProducts += 1;
+      }
+    });
+    productCount.textContent = String(visibleProducts).padStart(2, "0");
+  });
 });
 
 const revealElements = document.querySelectorAll(
-  ".section-topline, .section-heading, .product-card, .manifesto-content, .values-grid article, .newsletter-inner",
+  ".section-topline, .section-heading, .collection-filters, .product-card, .collection-note",
 );
 
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
